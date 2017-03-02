@@ -156,6 +156,8 @@
 
         x += dx;
         y += dy;
+
+        requestAnimationFrame(draw);
     }
 
     document.addEventListener("keydown", keyDownHandler, false);
@@ -185,7 +187,7 @@
         }
     }
 
-    setInterval(draw, 10);
+    draw();
 </script>
 
 </body>
